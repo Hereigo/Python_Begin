@@ -1,5 +1,17 @@
 import math  # імпротуємо модуль math
 
+# Strings MULTIPLICATION:
+print('Abc.' * 10)
+
+# Calculatin Incomings of SubStrings:
+lines = '''A
+B b B
+C c b
+'''
+print(sum('b' in line for line in lines.lower()))  # 4
+
+######################################################
+
 print(100 // 3)  # 33
 
 print(100 % 3)  # 1
