@@ -1,28 +1,34 @@
 # Function definition:
-def print_hi(name):
+def my_print(name):
     print(f'My name is "{name}" because I am Started Module!)')
 
 
 if __name__ == '__main__':
-    print_hi(__name__)
-
-# String OUT with SEPARATORS:
-print('aaa', 'bbb', 'ccc', 'ddd', sep='__Separator__')
+    my_print(__name__)
 
 # MULTI-Line text by Triple Quottes:
-print('''Aaaaaaaaaaaa
+myMultilineStr = '''Aaaaaaaaaaaa
 
-Bbbbbbbbbbbb       
-        Cccccccccc''')
+Bbbbbbbbbbbb       BBBBBB 
+        Cccccccccc   ...'''
+print(myMultilineStr)
+print(myMultilineStr.lower().splitlines())  # SPLIT by LINES
+print(myMultilineStr.upper().split())  # SPLIT by WORDS
 
 # FORMATTED String:
-print(f"Some text with inserted text '{__name__}'")
+a = 4
+b = 3
+print('Example-1: %d - %d = %d' % (a, b, a - b))
+print('Example-2: {} + {} = {}'.format(a, b, a + b))
+print(f'Example-3: {a} - {b} = {a - b}')
 
 # RAW String:
 print(r"RAW Text: Blablabla \ aaa \r\n bbb")
+# Symbols SCREENING:
+print("SCREENING: Blablabla \\ aaa \\r\\n bbb")
 
 # Strings MULTIPLICATION:
-print('Abc.' * 5)
+print('Abc.' * 10)
 
 myStr = 'Abcdefghijk'
 
@@ -38,10 +44,10 @@ print(myStr[3:10:2])  # dfhj
 # STRING as BOOL:
 print(bool(''))  # FALSE
 
-# INPUT data as FLOAT - NONE as Undefined:
-result = None
-x = float(input('Type first number: '))
-y = float(input('Type second number: '))
-result = x + y  # Result will be FLOAT!!!!!!
-if result is not None:
-    print(result)
+# String OUT with SEPARATORS:
+print('aaa', 'bbb', 'ccc', 'ddd', sep=';  ')
+
+# Strings with END:
+print('abc', end='\n\n')  # double ENTER
+print('he', end='')  # with NO END of line
+print('llo')
