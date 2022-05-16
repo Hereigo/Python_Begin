@@ -30,9 +30,6 @@ print(myStr[-1])  # k
 # String [ FROM : TO : STEP ]
 print(myStr[3:10:2])  # dfhj
 
-# STRING as BOOL:
-print(bool(''))  # FALSE
-
 # String OUT with SEPARATORS:
 print('aaa', 'bbb', 'ccc', 'ddd', sep=';  ')
 
