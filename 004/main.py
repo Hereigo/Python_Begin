@@ -1,9 +1,11 @@
+print(' =========== LISTS : =========== ')
 list = ['aaa', 111, 22.33, True, None]
 
-for i in list:
-    print(i)
+# SLICE - [FROM : TILL : STEP] :
+backward = list[::-1]
+print(backward)  # [None, True, 22.33, 111, 'aaa']
 
-print(' === LIST of FUNCs : === ')
+print(' =========== LIST of FUNCs : =========== ')
 f_list = [print, len]
 a_list = ['aaa', 'ssss', 'dddddd']
 
@@ -13,3 +15,7 @@ for f in f_list:
             f(a)
         else:
             print(f(a))
+
+# NO OUT-OF-RANGE-EXCEPTION! :
+print(a_list[2:10])  # 'dddddd'
+
