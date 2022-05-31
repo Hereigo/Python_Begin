@@ -1,6 +1,6 @@
 import math  # імпротуємо модуль math
 
-# Strings MULTIPLICATION:
+# STRINGS! MULTIPLICATION:
 print('Abc.' * 10)
 
 # Calculatin Incomings of SubStrings:

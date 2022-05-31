@@ -11,10 +11,8 @@ a_func('111', 222, x=444, z=333)
 # a_func(b=222, z=333, x=444, a=111) - TypeError!
 # a_func() got some positional-only arguments passed as keyword arguments: 'a, b'
 
-
 # Functions Comments-DOCS:
 print(a_func.__doc__)
-
 
 # ANNOTATIONS:
 

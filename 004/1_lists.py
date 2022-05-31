@@ -1,5 +1,6 @@
 # =========== LISTS : ===========
 list = ['aaa', 111, 22.33, True, None]
+# list.sort() - TypeError: '<' not supported between instances of 'int'
 
 # SLICE - [FROM : TILL : STEP] :
 backward = list[::-1]
@@ -45,4 +46,3 @@ print(a_list)  # ['aaa', 'new', 'fffff', 'yyyy']
 a_list += 'abc'  # LIST CONCAT STRING.
 print(a_list)  # ['aaa', 'new', 'fffff', 'yyyy', 'a', 'b', 'c']
 
-help(list)  # HELP !
