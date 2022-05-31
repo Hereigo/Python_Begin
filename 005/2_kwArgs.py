@@ -14,25 +14,24 @@ print(average(a_list))
 # OR
 print(average(a_tuple))
 
-# OR possible pass NON-ITERABLE!
-
-# ARGS & KWARGS - MUST be **UNPACKED into Multiple Params
+# Using (*) - Possible pass NON-ITERABLE! Multiple Params
 
 
-def average(*args):
+def average(*non_iterable_params):
     total = 0
-    for n in args:
+    for n in non_iterable_params:
         total += n
-    return total / len(args)
+    return total / len(non_iterable_params)
 
 
 print(average(10, 15, 20, 100))
-
 # Pass Tuple arise - TypeError: unsupported operand type(s) for +=: 'int'
 # print(average(a_tuple)) - Error!
 print(average(*a_tuple))  # Tuple MUST BE Expanded into MULTIPLE ARGS!
 
-# KeyWord ARGuments - for NAMED Params OR DICTIONARIES
+
+# (**) KeyWord Arguments - for NAMED Params OR DICTIONARIES
+
 a_dict = {'aa': 11, 'bb': 22, 'cc': 33}
 
 
@@ -46,6 +45,7 @@ kwa_test(**a_dict)
 kwa_test(abc=123, bcd=234, cde=345)
 
 
+# a, b - only REQUIRED!
 def multi_params(a, b, *args, **kwargs):
     print('a = ', a)
     print('b = ', b)
