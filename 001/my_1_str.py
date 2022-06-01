@@ -1,11 +1,11 @@
 # MULTI-Line text by Triple Quottes:
-myMultilineStr = '''Aaaaaaaaaaaa
+multiLineByTripleQuot = '''Aaaa
 
-Bbbbbbbbbbbb       BBBBBB 
-        Cccccccccc   ...'''
-print(myMultilineStr)
-print(myMultilineStr.lower().splitlines())  # SPLIT by LINES
-print(myMultilineStr.upper().split())  # SPLIT by WORDS
+Bbbb   bbbb
+        Cccc   ...'''
+
+print(multiLineByTripleQuot.splitlines())  # SPLIT by LINES
+print(multiLineByTripleQuot.split())  # SPLIT by WORDS
 
 # FORMATTED String:
 a = 4
