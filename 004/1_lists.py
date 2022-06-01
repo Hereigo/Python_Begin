@@ -46,3 +46,6 @@ print(a_list)  # ['aaa', 'new', 'fffff', 'yyyy']
 a_list += 'abc'  # LIST CONCAT STRING.
 print(a_list)  # ['aaa', 'new', 'fffff', 'yyyy', 'a', 'b', 'c']
 
+# LIST Empty is BOOL()==FALSE
+print(bool([]))     # False
+print(bool([None]))  # True!
