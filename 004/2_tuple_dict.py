@@ -26,3 +26,7 @@ for i in a_dict.items():
     print(i)    # FULL ITEMS
 
 print(a_dict.get('third', -1))  # Return Value IF Key Not Found.
+
+# REVERSED RANGE:
+for i in reversed(range(5)):
+    print(i, end=', ')        # -> 4, 3, 2, 1, 0,
